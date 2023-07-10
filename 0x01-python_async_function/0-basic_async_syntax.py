@@ -10,4 +10,6 @@ async def wait_random(max_delay: int = 10) -> float:
     """Coroutine that waits for a random delay
     and returns the delay
     """
-    return random.uniform(0, max_delay)
+    value = random.uniform(0, max_delay)
+    await asyncio.sleep(value)
+    return value
