@@ -5,7 +5,7 @@ from typing import Generator
 import random
 
 
-async def async_generator() -> Generator[int, None, None]:
+async def async_generator() -> Generator[float, None, None]:
     """Generator function that yields values between
     0 to 10 randomly
     """
